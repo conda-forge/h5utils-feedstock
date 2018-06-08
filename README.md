@@ -20,10 +20,10 @@ Current build status
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-h5utils-green.svg)](https://anaconda.org/conda-forge/h5utils)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/h5utils.svg)](https://anaconda.org/conda-forge/h5utils)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/h5utils.svg)](https://anaconda.org/conda-forge/h5utils)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/h5utils.svg)](https://anaconda.org/conda-forge/h5utils)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-h5utils-green.svg)](https://anaconda.org/conda-forge/h5utils) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/h5utils.svg)](https://anaconda.org/conda-forge/h5utils) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/h5utils.svg)](https://anaconda.org/conda-forge/h5utils) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/h5utils.svg)](https://anaconda.org/conda-forge/h5utils) |
 
 Installing h5utils
 ==================
