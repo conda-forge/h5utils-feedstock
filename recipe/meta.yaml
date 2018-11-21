@@ -17,14 +17,16 @@ build:
 
 requirements:
   build:
-    - toolchain
-    - libpng >=1.6.32,<1.6.35
-    - hdf5 1.10.2
-    - zlib 1.2.11
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - libpng
+    - hdf5
+    - zlib
   run:
-    - libpng >=1.6.32,<1.6.35
-    - hdf5 1.10.2
-    - zlib 1.2.11
+    - libpng
+    - hdf5
+    - zlib
 
 test:
   commands:
