@@ -1,6 +1,14 @@
 {% set name = "h5utils" %}
 {% set version = "1.13.1" %}
 {% set sha256 = "c5a76f064d6daa3e65583dce2b61202510e67cf6590f076af9a8aa72511d7d65" %}
+{% set build = 1003 %}
+
+# recipe-lint fails if mpi is undefined
+{% set mpi = mpi or 'nompi' %}
+{% if mpi == "nompi" %}
+# prioritize nompi via build number
+{% set build = build + 100 %}
+{% endif %}
 
 package:
   name: {{ name }}
@@ -12,18 +20,34 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1002
+  number: {{ build }}
   skip: true  # [win]
+  {% if mpi != "nompi" %}
+  {% set mpi_prefix = "mpi_" + mpi %}
+  {% else %}
+  {% set mpi_prefix = "nompi" %}
+  {% endif %}
+  # add build string so packages can depend on
+  # mpi or nompi variants
+  # dependencies:
+  # `h5utils * mpi_mpich_*` for mpich
+  # `h5utils * mpi_*` for any mpi
+  # `h5utils * nompi_*` for no mpi
+  string: "{{ mpi_prefix }}_h{{ PKG_HASH }}_{{ build }}"
+  run_exports:
+    - {{ name }} * {{ mpi_prefix }}_*
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
+    - {{ mpi }}  # [mpi != 'nompi']
     - libpng
-    - hdf5
+    - hdf5 * {{ mpi_prefix }}_*
     - zlib
   run:
+    - {{ mpi }}  # [mpi != 'nompi']
     - libpng
     - hdf5
     - zlib
