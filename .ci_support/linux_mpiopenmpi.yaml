@@ -14,6 +14,8 @@ libpng:
 - 1.6.35
 mpi:
 - openmpi
+numpy:
+- '1.9'
 pin_run_as_build:
   libpng:
     max_pin: x.x

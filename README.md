@@ -5,7 +5,7 @@
 About h5utils
 =============
 
-Home: http:/github.com/stevengj/h5utils
+Home: http:/github.com/NanoComp/h5utils
 
 Package license: MIT, GPL2
 
