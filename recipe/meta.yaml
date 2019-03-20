@@ -1,7 +1,7 @@
 {% set name = "h5utils" %}
 {% set version = "1.13.1" %}
 {% set sha256 = "c5a76f064d6daa3e65583dce2b61202510e67cf6590f076af9a8aa72511d7d65" %}
-{% set build = 1003 %}
+{% set build = 1004 %}
 
 # recipe-lint fails if mpi is undefined
 {% set mpi = mpi or 'nompi' %}
@@ -16,7 +16,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/stevengj/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
+  url: https://github.com/NanoComp/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -53,6 +53,9 @@ requirements:
     - zlib
 
 test:
+  requires:
+    - h5py
+    - numpy
   commands:
     - h5topng -h
     - h5totxt -h
@@ -60,12 +63,12 @@ test:
     - h5tovtk -h
 
 about:
-  home: http:/github.com/stevengj/h5utils
+  home: http:/github.com/NanoComp/h5utils
   license: MIT, GPL2
   license_file: COPYING
   summary: A set of utilities for visualization and conversion of scientific data in the free portable HDF5 format
-  doc_url: https://github.com/stevengj/h5utils/tree/master/doc
-  dev_url: https://github.com/stevengj/h5utils
+  doc_url: https://github.com/NanoComp/h5utils/tree/master/doc
+  dev_url: https://github.com/NanoComp/h5utils
 
 extra:
   recipe-maintainers:

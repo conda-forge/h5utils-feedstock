@@ -1,11 +1,15 @@
 c_compiler:
 - gcc
+c_compiler_version:
+- '7'
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 cxx_compiler:
 - gxx
+cxx_compiler_version:
+- '7'
 docker_image:
 - condaforge/linux-anvil-comp7
 hdf5:
@@ -14,6 +18,8 @@ libpng:
 - 1.6.35
 mpi:
 - mpich
+numpy:
+- '1.9'
 pin_run_as_build:
   libpng:
     max_pin: x.x
