@@ -1,7 +1,7 @@
 {% set name = "h5utils" %}
 {% set version = "1.13.1" %}
 {% set sha256 = "c5a76f064d6daa3e65583dce2b61202510e67cf6590f076af9a8aa72511d7d65" %}
-{% set build = 1005 %}
+{% set build = 1006 %}
 
 # recipe-lint fails if mpi is undefined
 {% set mpi = mpi or 'nompi' %}
@@ -44,7 +44,8 @@ requirements:
   host:
     - {{ mpi }}  # [mpi != 'nompi']
     - libpng
-    - hdf5 * {{ mpi_prefix }}_*
+    # h5py is pinned at 1.10.4, and since we use that in the test phase, we have to pin to 1.10.4
+    - hdf5 1.10.4 {{ mpi_prefix }}_*
     - zlib
   run:
     - {{ mpi }}  # [mpi != 'nompi']
@@ -73,3 +74,4 @@ about:
 extra:
   recipe-maintainers:
     - ChristopherHogan
+    - oskooi
