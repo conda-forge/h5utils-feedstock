@@ -13,13 +13,13 @@ cxx_compiler_version:
 docker_image:
 - condaforge/linux-anvil-comp7
 hdf5:
-- 1.10.4
+- 1.10.5
 libpng:
 - 1.6.35
 mpi:
 - nompi
 numpy:
-- '1.9'
+- '1.14'
 pin_run_as_build:
   libpng:
     max_pin: x.x
