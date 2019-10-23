@@ -10,5 +10,5 @@ fi
 # Disabling optimization fixes it. Could be a compiler bug, but I wasn't able
 # to reproduce it in a way that didn't involve conda
 ./configure CPPFLAGS="${CPPFLAGS} -O0" --prefix="${PREFIX}"
-make
+make V=1
 make install
