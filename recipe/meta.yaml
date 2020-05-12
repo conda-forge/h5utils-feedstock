@@ -44,7 +44,7 @@ requirements:
   host:
     - {{ mpi }}  # [mpi != 'nompi']
     - libpng
-    - hdf5 * {{ mpi_prefix }}_*
+    - hdf5 >=1.10 {{ mpi_prefix }}_*
     - zlib
   run:
     - {{ mpi }}  # [mpi != 'nompi']
