@@ -64,7 +64,7 @@ test:
 
 about:
   home: https://github.com/NanoComp/h5utils
-  license: MIT, GPL-2.0-or-later
+  license: MIT AND GPL-2.0-or-later
   license_file: COPYING
   summary: A set of utilities for visualization and conversion of scientific data in the free portable HDF5 format
   doc_url: https://github.com/NanoComp/h5utils/tree/master/doc
