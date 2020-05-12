@@ -1,0 +1,29 @@
+c_compiler:
+- gcc
+c_compiler_version:
+- '8'
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- gxx
+cxx_compiler_version:
+- '8'
+docker_image:
+- condaforge/linux-anvil-ppc64le
+hdf5:
+- 1.10.5
+libpng:
+- '1.6'
+mpi:
+- openmpi
+numpy:
+- '1.16'
+pin_run_as_build:
+  libpng:
+    max_pin: x.x
+  zlib:
+    max_pin: x.x
+zlib:
+- '1.2'
