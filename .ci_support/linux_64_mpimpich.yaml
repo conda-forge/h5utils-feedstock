@@ -19,11 +19,13 @@ libpng:
 mpi:
 - mpich
 numpy:
-- '1.14'
+- '1.16'
 pin_run_as_build:
   libpng:
     max_pin: x.x
   zlib:
     max_pin: x.x
+target_platform:
+- linux-64
 zlib:
 - '1.2'
