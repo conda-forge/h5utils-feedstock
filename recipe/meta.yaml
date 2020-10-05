@@ -50,7 +50,7 @@ requirements:
   run:
     - {{ mpi }}  # [mpi != 'nompi']
     - libpng
-    - hdf5
+    - hdf5 * {{ mpi_prefix }}_*
     - zlib
     - {{ pin_compatible('numpy') }}
 
