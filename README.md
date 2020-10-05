@@ -3,7 +3,7 @@ About h5utils
 
 Home: http:/github.com/NanoComp/h5utils
 
-Package license: MIT, GPL2
+Package license: MIT
 
 Feedstock license: BSD-3-Clause
 
