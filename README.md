@@ -159,5 +159,6 @@ Feedstock Maintainers
 =====================
 
 * [@ChristopherHogan](https://github.com/ChristopherHogan/)
+* [@RobinD42](https://github.com/RobinD42/)
 * [@oskooi](https://github.com/oskooi/)
 
