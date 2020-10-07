@@ -44,13 +44,17 @@ requirements:
   host:
     - {{ mpi }}  # [mpi != 'nompi']
     - libpng
-    - hdf5 1.10.5 {{ mpi_prefix }}_*
+    # We need to list hdf5 twice to get version pinning from
+    # conda_build_config.yaml, (which falls back to the one from conda-forge,)
+    # and build pinning from {{ mpi_prefix }}
+    - hdf5
+    - hdf5 * {{ mpi_prefix }}_*
     - zlib
     - numpy
   run:
     - {{ mpi }}  # [mpi != 'nompi']
     - libpng
-    - hdf5 1.10.5 {{ mpi_prefix }}_*
+    - hdf5
     - zlib
     - {{ pin_compatible('numpy') }}
 
