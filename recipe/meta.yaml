@@ -1,7 +1,7 @@
 {% set name = "h5utils" %}
 {% set version = "1.13.1" %}
 {% set sha256 = "c5a76f064d6daa3e65583dce2b61202510e67cf6590f076af9a8aa72511d7d65" %}
-{% set build = 1007 %}
+{% set build = 1008 %}
 
 # recipe-lint fails if mpi is undefined
 {% set mpi = mpi or 'nompi' %}
@@ -44,13 +44,17 @@ requirements:
   host:
     - {{ mpi }}  # [mpi != 'nompi']
     - libpng
-    - hdf5 1.10.5 {{ mpi_prefix }}_*
+    # We need to list hdf5 twice to get version pinning from
+    # conda_build_config.yaml, (which falls back to the one from conda-forge,)
+    # and build pinning from {{ mpi_prefix }}
+    - hdf5
+    - hdf5 * {{ mpi_prefix }}_*
     - zlib
     - numpy
   run:
     - {{ mpi }}  # [mpi != 'nompi']
     - libpng
-    - hdf5 1.10.5 {{ mpi_prefix }}_*
+    - hdf5
     - zlib
     - {{ pin_compatible('numpy') }}
 

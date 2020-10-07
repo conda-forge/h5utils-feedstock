@@ -12,6 +12,8 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '10'
+hdf5:
+- 1.10.5
 libpng:
 - '1.6'
 macos_machine:
