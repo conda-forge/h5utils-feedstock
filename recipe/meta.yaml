@@ -46,11 +46,13 @@ requirements:
     - libpng
     - hdf5 1.10.5 {{ mpi_prefix }}_*
     - zlib
+    - numpy
   run:
     - {{ mpi }}  # [mpi != 'nompi']
     - libpng
     - hdf5 1.10.5 {{ mpi_prefix }}_*
     - zlib
+    - {{ pin_compatible('numpy') }}
 
 test:
   requires:
