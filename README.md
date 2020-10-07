@@ -5,11 +5,13 @@ Home: http:/github.com/NanoComp/h5utils
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/h5utils-feedstock/blob/master/LICENSE.txt)
 
 Summary: A set of utilities for visualization and conversion of scientific data in the free portable HDF5 format
 
+Development: https://github.com/NanoComp/h5utils
 
+Documentation: https://github.com/NanoComp/h5utils/tree/master/doc
 
 Current build status
 ====================
