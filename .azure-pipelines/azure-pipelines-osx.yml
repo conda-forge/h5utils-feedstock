@@ -8,11 +8,17 @@ jobs:
     vmImage: macOS-10.15
   strategy:
     matrix:
-      osx_64_mpimpich:
-        CONFIG: osx_64_mpimpich
+      osx_64_mpimpichnumpy1.16:
+        CONFIG: osx_64_mpimpichnumpy1.16
         UPLOAD_PACKAGES: 'True'
-      osx_64_mpinompi:
-        CONFIG: osx_64_mpinompi
+      osx_64_mpimpichnumpy1.18:
+        CONFIG: osx_64_mpimpichnumpy1.18
+        UPLOAD_PACKAGES: 'True'
+      osx_64_mpinompinumpy1.16:
+        CONFIG: osx_64_mpinompinumpy1.16
+        UPLOAD_PACKAGES: 'True'
+      osx_64_mpinompinumpy1.18:
+        CONFIG: osx_64_mpinompinumpy1.18
         UPLOAD_PACKAGES: 'True'
     maxParallel: 8
   timeoutInMinutes: 360
