@@ -9,6 +9,9 @@ png = 'test.png'
 with h5py.File(fn, 'w') as f:
     f['test'] = np.zeros(5)
 
-subprocess.check_call('h5topng -v test.h5', shell=True)
+# Use an explicit path to the colormap to avoid possible invalid colormap error
+cm = os.path.join(os.environ.get('PREFIX'), 'share/h5utils/colormaps/gray')
+
+subprocess.check_call('h5topng -v -c {} test.h5'.format(cm), shell=True)
 
 assert os.path.exists(os.path.join('.', png))

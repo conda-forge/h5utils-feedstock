@@ -1,7 +1,7 @@
 {% set name = "h5utils" %}
 {% set version = "1.13.1" %}
 {% set sha256 = "c5a76f064d6daa3e65583dce2b61202510e67cf6590f076af9a8aa72511d7d65" %}
-{% set build = 1006 %}
+{% set build = 1007 %}
 
 # recipe-lint fails if mpi is undefined
 {% set mpi = mpi or 'nompi' %}
@@ -44,13 +44,15 @@ requirements:
   host:
     - {{ mpi }}  # [mpi != 'nompi']
     - libpng
-    - hdf5 * {{ mpi_prefix }}_*
+    - hdf5 1.10.5 {{ mpi_prefix }}_*
     - zlib
+    - numpy
   run:
     - {{ mpi }}  # [mpi != 'nompi']
     - libpng
-    - hdf5
+    - hdf5 1.10.5 {{ mpi_prefix }}_*
     - zlib
+    - {{ pin_compatible('numpy') }}
 
 test:
   requires:
@@ -64,7 +66,7 @@ test:
 
 about:
   home: http:/github.com/NanoComp/h5utils
-  license: MIT, GPL2
+  license: MIT
   license_file: COPYING
   summary: A set of utilities for visualization and conversion of scientific data in the free portable HDF5 format
   doc_url: https://github.com/NanoComp/h5utils/tree/master/doc
