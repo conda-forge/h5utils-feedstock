@@ -31,31 +31,59 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_mpimpich</td>
+              <td>linux_64_mpimpichnumpy1.16</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpich" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.16" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpinompi</td>
+              <td>linux_64_mpimpichnumpy1.18</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpinompi" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.18" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpich</td>
+              <td>linux_64_mpinompinumpy1.16</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpich" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpinompinumpy1.16" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpinompi</td>
+              <td>linux_64_mpinompinumpy1.18</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpinompi" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpinompinumpy1.18" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpimpichnumpy1.16</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.16" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpimpichnumpy1.18</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.18" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpinompinumpy1.16</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpinompinumpy1.16" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpinompinumpy1.18</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpinompinumpy1.18" alt="variant">
                 </a>
               </td>
             </tr>
