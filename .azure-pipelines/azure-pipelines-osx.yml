@@ -8,13 +8,12 @@ jobs:
     vmImage: macOS-10.15
   strategy:
     matrix:
-      osx_64_mpimpich:
-        CONFIG: osx_64_mpimpich
+      osx_64_c_compiler_version10cxx_compiler_version10mpimpich:
+        CONFIG: osx_64_c_compiler_version10cxx_compiler_version10mpimpich
         UPLOAD_PACKAGES: 'True'
-      osx_64_mpinompi:
-        CONFIG: osx_64_mpinompi
+      osx_64_c_compiler_version10cxx_compiler_version10mpinompi:
+        CONFIG: osx_64_c_compiler_version10cxx_compiler_version10mpinompi
         UPLOAD_PACKAGES: 'True'
-    maxParallel: 8
   timeoutInMinutes: 360
 
   steps:
