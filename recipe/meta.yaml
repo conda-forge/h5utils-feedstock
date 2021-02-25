@@ -4,7 +4,7 @@
 {% set build = 1010 %}
 
 # recipe-lint fails if mpi is undefined
-{% set mpi = mpi or 'nompi' %}
+{% set mpi = mpi or "nompi" %}
 {% if mpi == "nompi" %}
 # prioritize nompi via build number
 {% set build = build + 100 %}
@@ -44,9 +44,6 @@ requirements:
   host:
     - {{ mpi }}  # [mpi != 'nompi']
     - libpng
-    # We need to list hdf5 twice to get version pinning from
-    # conda_build_config.yaml, (which falls back to the one from conda-forge,)
-    # and build pinning from {{ mpi_prefix }}
     - hdf5 * {{ mpi_prefix }}_*
     - zlib
     - numpy
