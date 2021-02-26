@@ -1,10 +1,10 @@
 {% set name = "h5utils" %}
 {% set version = "1.13.1" %}
 {% set sha256 = "c5a76f064d6daa3e65583dce2b61202510e67cf6590f076af9a8aa72511d7d65" %}
-{% set build = 1009 %}
+{% set build = 1010 %}
 
 # recipe-lint fails if mpi is undefined
-{% set mpi = mpi or 'nompi' %}
+{% set mpi = mpi or "nompi" %}
 {% if mpi == "nompi" %}
 # prioritize nompi via build number
 {% set build = build + 100 %}
@@ -69,7 +69,7 @@ test:
     - h5tovtk -h
 
 about:
-  home: http:/github.com/NanoComp/h5utils
+  home: https://github.com/NanoComp/h5utils
   license: MIT
   license_file: COPYING
   summary: A set of utilities for visualization and conversion of scientific data in the free portable HDF5 format

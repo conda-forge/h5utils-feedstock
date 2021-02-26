@@ -2,5 +2,5 @@ mpi:
   - nompi
   - mpich
 
-pip_run_as_build:
+pin_run_as_build:
   mpich: x.x
