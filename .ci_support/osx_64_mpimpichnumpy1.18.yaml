@@ -13,15 +13,15 @@ cxx_compiler:
 cxx_compiler_version:
 - '11'
 hdf5:
-- 1.10.6
+- 1.12.1
 libpng:
 - '1.6'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 mpi:
-- nompi
+- mpich
 numpy:
-- '1.16'
+- '1.18'
 pin_run_as_build:
   libpng:
     max_pin: x.x

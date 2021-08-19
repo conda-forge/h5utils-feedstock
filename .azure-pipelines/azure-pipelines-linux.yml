@@ -5,15 +5,23 @@
 jobs:
 - job: linux
   pool:
-    vmImage: ubuntu-16.04
+    vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_mpimpich:
-        CONFIG: linux_64_mpimpich
+      linux_64_mpimpichnumpy1.18:
+        CONFIG: linux_64_mpimpichnumpy1.18
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
-      linux_64_mpinompi:
-        CONFIG: linux_64_mpinompi
+      linux_64_mpimpichnumpy1.19:
+        CONFIG: linux_64_mpimpichnumpy1.19
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
+      linux_64_mpinompinumpy1.18:
+        CONFIG: linux_64_mpinompinumpy1.18
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
+      linux_64_mpinompinumpy1.19:
+        CONFIG: linux_64_mpinompinumpy1.19
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
   timeoutInMinutes: 360
