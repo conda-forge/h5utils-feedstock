@@ -8,16 +8,24 @@ jobs:
     vmImage: macOS-10.15
   strategy:
     matrix:
-      osx_64_mpimpich:
-        CONFIG: osx_64_mpimpich
+      osx_64_mpimpichnumpy1.18:
+        CONFIG: osx_64_mpimpichnumpy1.18
         UPLOAD_PACKAGES: 'True'
-      osx_64_mpinompi:
-        CONFIG: osx_64_mpinompi
+      osx_64_mpimpichnumpy1.19:
+        CONFIG: osx_64_mpimpichnumpy1.19
         UPLOAD_PACKAGES: 'True'
-      osx_64_mpiopenmpi:
-        CONFIG: osx_64_mpiopenmpi
+      osx_64_mpinompinumpy1.18:
+        CONFIG: osx_64_mpinompinumpy1.18
         UPLOAD_PACKAGES: 'True'
-    maxParallel: 8
+      osx_64_mpinompinumpy1.19:
+        CONFIG: osx_64_mpinompinumpy1.19
+        UPLOAD_PACKAGES: 'True'
+      osx_64_mpiopenmpinumpy1.18:
+        CONFIG: osx_64_mpiopenmpinumpy1.18
+        UPLOAD_PACKAGES: 'True'
+      osx_64_mpiopenmpinumpy1.19:
+        CONFIG: osx_64_mpiopenmpinumpy1.19
+        UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 
   steps:
@@ -27,6 +35,11 @@ jobs:
       export OSX_FORCE_SDK_DOWNLOAD="1"
       export GIT_BRANCH=$BUILD_SOURCEBRANCHNAME
       export FEEDSTOCK_NAME=$(basename ${BUILD_REPOSITORY_NAME})
+      if [[ "${BUILD_REASON:-}" == "PullRequest" ]]; then
+        export IS_PR_BUILD="True"
+      else
+        export IS_PR_BUILD="False"
+      fi
       ./.scripts/run_osx_build.sh
     displayName: Run OSX build
     env:
