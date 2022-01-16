@@ -42,6 +42,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
+    - make
     - {{ mpi }}  # [mpi != 'nompi']
     - libpng
     # We need to list hdf5 twice to get version pinning from
