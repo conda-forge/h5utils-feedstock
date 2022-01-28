@@ -192,6 +192,3 @@ Feedstock Maintainers
 * [@RobinD42](https://github.com/RobinD42/)
 * [@oskooi](https://github.com/oskooi/)
 
-
-<!-- dummy commit to enable rerendering -->
-
