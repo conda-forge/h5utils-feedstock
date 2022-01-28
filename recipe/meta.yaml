@@ -1,7 +1,7 @@
 {% set name = "h5utils" %}
 {% set version = "1.13.1" %}
 {% set sha256 = "c5a76f064d6daa3e65583dce2b61202510e67cf6590f076af9a8aa72511d7d65" %}
-{% set build = 1012 %}
+{% set build = 1013 %}
 
 # recipe-lint fails if mpi is undefined
 {% set mpi = mpi or "nompi" %}
