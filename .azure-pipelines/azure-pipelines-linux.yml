@@ -8,20 +8,12 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_mpimpichnumpy1.18:
-        CONFIG: linux_64_mpimpichnumpy1.18
+      linux_64_mpimpich:
+        CONFIG: linux_64_mpimpich
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_mpimpichnumpy1.19:
-        CONFIG: linux_64_mpimpichnumpy1.19
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_mpinompinumpy1.18:
-        CONFIG: linux_64_mpinompinumpy1.18
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_mpinompinumpy1.19:
-        CONFIG: linux_64_mpinompinumpy1.19
+      linux_64_mpinompi:
+        CONFIG: linux_64_mpinompi
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
   timeoutInMinutes: 360

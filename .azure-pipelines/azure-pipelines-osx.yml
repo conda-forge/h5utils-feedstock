@@ -5,20 +5,14 @@
 jobs:
 - job: osx
   pool:
-    vmImage: macOS-10.15
+    vmImage: macOS-11
   strategy:
     matrix:
-      osx_64_mpimpichnumpy1.18:
-        CONFIG: osx_64_mpimpichnumpy1.18
+      osx_64_mpimpich:
+        CONFIG: osx_64_mpimpich
         UPLOAD_PACKAGES: 'True'
-      osx_64_mpimpichnumpy1.19:
-        CONFIG: osx_64_mpimpichnumpy1.19
-        UPLOAD_PACKAGES: 'True'
-      osx_64_mpinompinumpy1.18:
-        CONFIG: osx_64_mpinompinumpy1.18
-        UPLOAD_PACKAGES: 'True'
-      osx_64_mpinompinumpy1.19:
-        CONFIG: osx_64_mpinompinumpy1.19
+      osx_64_mpinompi:
+        CONFIG: osx_64_mpinompi
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 
