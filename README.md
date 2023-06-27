@@ -1,11 +1,11 @@
-About h5utils
-=============
+About h5utils-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/h5utils-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/NanoComp/h5utils
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/h5utils-feedstock/blob/main/LICENSE.txt)
 
 Summary: A set of utilities for visualization and conversion of scientific data in the free portable HDF5 format
 
@@ -31,59 +31,31 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_mpimpichnumpy1.20</td>
+              <td>linux_64_mpimpich</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpimpichnumpy1.20" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpimpich" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpimpichnumpy1.21</td>
+              <td>linux_64_mpinompi</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpimpichnumpy1.21" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpinompi" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpinompinumpy1.20</td>
+              <td>osx_64_mpimpich</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpinompinumpy1.20" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpich" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpinompinumpy1.21</td>
+              <td>osx_64_mpinompi</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpinompinumpy1.21" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_mpimpichnumpy1.20</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichnumpy1.20" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_mpimpichnumpy1.21</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpimpichnumpy1.21" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_mpinompinumpy1.20</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompinumpy1.20" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_mpinompinumpy1.21</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=403&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompinumpy1.21" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/h5utils-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_mpinompi" alt="variant">
                 </a>
               </td>
             </tr>
@@ -215,7 +187,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@ChristopherHogan](https://github.com/ChristopherHogan/)
-* [@RobinD42](https://github.com/RobinD42/)
 * [@oskooi](https://github.com/oskooi/)
 
