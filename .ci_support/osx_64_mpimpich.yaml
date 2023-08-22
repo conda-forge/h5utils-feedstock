@@ -13,7 +13,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '15'
 hdf5:
-- 1.14.1
+- 1.14.2
 libpng:
 - '1.6'
 macos_machine:
@@ -23,7 +23,7 @@ mpi:
 mpich:
 - '4'
 numpy:
-- '1.21'
+- '1.22'
 openmpi:
 - '4'
 target_platform:
