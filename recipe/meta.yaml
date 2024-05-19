@@ -1,7 +1,7 @@
 {% set name = "h5utils" %}
 {% set version = "1.13.2" %}
 {% set sha256 = "eea7855a8235facb7c454e61103098e55658da0ddf4b6de5b82a992e5f024351" %}
-{% set build = 1002 %}
+{% set build = 1003 %}
 
 # recipe-lint fails if mpi is undefined
 {% set mpi = mpi or "nompi" %}
@@ -40,6 +40,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - make
@@ -57,7 +58,6 @@ requirements:
     - libpng
     - hdf5
     - zlib
-    - {{ pin_compatible('numpy') }}
 
 test:
   requires:
