@@ -27,7 +27,7 @@ mpi:
 mpich:
 - '4'
 numpy:
-- '2.0'
+- '2'
 openmpi:
 - '4'
 target_platform:
